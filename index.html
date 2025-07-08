@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App</title>
+    <title>Астрология здоровья</title>
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
@@ -11,10 +11,275 @@
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <header class="header"><div class="container"></div></header>
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <p class="header-desc">Профессиональный курс</p>
+          <p class="header-name">Ведической Астрологии</p>
+          <p class="start">
+            старт <span id="dateElement"></span>
+            <span id="monthElement"></span>
+          </p>
+        </div>
+      </div>
+    </header>
     <main>
-      <section></section>
+      <section class="hero">
+        <div class="container">
+          <h1 class="title">
+            Как предсказать болезнь до симптомов по дате рождения, даже если
+            сейчас ничего не беспокоит
+          </h1>
+          <ul class="list">
+            <li class="list-item">
+              <p class="item-text">Без запугивания и диагнозов</p>
+            </li>
+            <li class="list-item">
+              <p class="item-text">Без медицинских знаний и эзотерики</p>
+            </li>
+            <li class="list-item">
+              <p class="item-text">Увидите риски заранее</p>
+            </li>
+            <li class="list-item">
+              <p class="item-text">С акцентом на профилактику</p>
+            </li>
+          </ul>
+          <a class="hero-btn" href="">детальнее</a>
+          <div id="countdown-one" class="countdown">
+            <div class="countdown-number">
+              <span class="minutes countdown-time"></span>
+              <div class="countdown-label minutes-label">м</div>
+            </div>
+            <div><span class="countdown-doubledot">|</span></div>
+            <div class="countdown-number">
+              <span class="seconds countdown-time"></span>
+              <div class="countdown-label seconds-label">с</div>
+            </div>
+            <div><span class="countdown-doubledot">|</span></div>
+            <div class="countdown-number">
+              <span class="milliseconds countdown-time"></span>
+              <div class="countdown-label milliseconds-label">мс</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bonuses">
+        <div class="container">
+          <h2 class="title">
+            Успейте присоединиться по лучшей цене и забрать бонусы
+          </h2>
+          <ul class="main-list">
+            <li class="main-item">
+              <picture>
+                <source
+                  srcset="
+                    ./src/img/bonuses/bonus-01-1x.png 1x,
+                    ./src/img/bonuses/bonus-01-2x.png 2x
+                  "
+                  width="246"
+                  height="auto" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-01-1x.png"
+                  alt="bonus image"
+                  width="246"
+                  height="auto"
+              /></picture>
+              <p class="item-text">
+                Закрытый вебинар “Что в вашей карте рождения мешает быть
+                счастливым и провоцирует болезни”
+              </p>
+            </li>
+            <li class="main-item">
+              <picture>
+                <source
+                  srcset="
+                    ./src/img/bonuses/bonus-02-1x.png 1x,
+                    ./src/img/bonuses/bonus-02-2x.png 2x
+                  "
+                  width="246"
+                  height="auto" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-02-1x.png"
+                  alt="bonus image"
+                  width="246"
+                  height="auto"
+              /></picture>
+              <p class="item-text">
+                Гайд “ Чекап организма”. Что и когда нужно проверять.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="for-you">
+        <div class="container">
+          <h2 class="title">Курс для вас, если:</h2>
+          <ul class="list">
+            <li class="list-item">
+              <p class="item-text">
+                <span>Постоянно устаете,</span> но врачи говорят «всё в
+                порядке», и вы не знаете, что делать?
+              </p>
+            </li>
+            <li class="list-item">
+              <p class="item-text">
+                Беспокоитесь, что
+                <span>скрытые проблемы со здоровьем</span> застанут вас или
+                близких врасплох?
+              </p>
+            </li>
+            <li class="list-item">
+              <p class="item-text">
+                <span>Хотите защитить себя и семью,</span> но не готовы тратить
+                тысячи на анализы и обследования?
+              </p>
+            </li>
+            <li class="list-item">
+              <p class="item-text">
+                Замечаете, что стресс и эмоции влияют на самочувствие, но не
+                понимаете, <span>как это исправить?</span>
+              </p>
+            </li>
+            <li class="list-item">
+              <p class="item-text">
+                Мечтаете о
+                <span>простом способе заботиться о здоровье</span> без сложных
+                терминов и эзотерики?
+              </p>
+            </li>
+          </ul>
+          <p class="desc">
+            Этот курс для вас, если вы хотите взять здоровье под контроль и
+            <span>жить спокойно,</span> зная, на что обратить внимание!
+          </p>
+        </div>
+        <picture>
+          <source
+            srcset="
+              ./src/img/for-you/author-image-1x.png 1x,
+              ./src/img/for-you/author-image-2x.png 2x
+            "
+            width="100%"
+            height="auto" />
+          <img
+            class="author-image"
+            src="./src/img/for-you/author-image-1x.png"
+            alt="author image"
+            width="100%"
+            height="auto"
+        /></picture>
+      </section>
+      <section class="about-author">
+        <div class="container">
+          <h2 class="title">Автор курса</h2>
+          <h3 class="name">Виктория Бардадым</h3>
+          <ul class="list">
+            <li class="list-item">
+              <img src="./src/img/author/heart.svg" alt="heart" width="28" />
+              <p class="item-text">
+                Астролог, консультант, преподаватель астрологии с
+                <span>10 летним опытом</span>
+              </p>
+            </li>
+            <li class="list-item">
+              <img src="./src/img/author/heart.svg" alt="heart" width="28" />
+              <p class="item-text">
+                Курсы и консультации прошли <span>более 20000 человек</span>
+              </p>
+            </li>
+            <li class="list-item">
+              <img src="./src/img/author/heart.svg" alt="heart" width="28" />
+              <p class="item-text">
+                Счастливая жена и мама,
+                <span>реализованная во всех сферах</span> женщина
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="why-make">
+        <div class="container">
+          <h2 class="title">Почему я создала этот курс</h2>
+          <div class="hidden-wrapper collapsed" id="textBlock">
+            <ul class="list">
+              <li class="list-item">
+                <span>С детства я мечтала</span> стать врачом, чтобы
+                <span>помогать людям,</span> но жизнь увела меня по другому
+                пути. Однако страсть к медицине осталась: я всегда была той, к
+                кому близкие и друзья обращались за советами при болезнях. Годы
+                изучения передовых медицинских знаний и астрологии открыли мне
+                уникальный подход —
+                <span
+                  >возможность видеть риски для здоровья через дату
+                  рождения</span
+                >
+              </li>
+              <li class="list-item">
+                Когда я начала изучать астрологию, первыми я анализировала карты
+                своих детей, чтобы понять,
+                <span
+                  >какие проблемы со здоровьем могут возникнуть и как их
+                  предотвратить.</span
+                >
+                Но настоящий переломный момент случился с моим мужем. Благодаря
+                астрологической карте я заметила скрытую проблему задолго до
+                симптомов. Мы обратились к врачу, и хирург, проводивший
+                операцию, был поражен: за 20+ лет практики он впервые видел,
+                чтобы проблему выявили на такой ранней стадии.
+                <span>Это спасло</span> не только здоровье мужа, но и его
+                качество жизни
+              </li>
+              <li class="list-item">
+                После этого я начала консультироваться с заведующим отделением
+                крупной больницы, чтобы глубже понять, почему одни и те же
+                проблемы проявляются по-разному в разные периоды.
+                <span>Врачи стали направлять ко мне своих пациентов,</span> что
+                стало для меня невероятной честью. За годы работы
+                <span
+                  >я помогла сотням людей выявить риски и предотвратить</span
+                >
+                серьезные проблемы, работая в связке с традиционной медициной
+              </li>
+              <li class="list-item">
+                Этот курс — не про лечение или альтернативную медицину. Он про
+                то, как увидеть в вашей карте рождения предрасположенности к
+                заболеваниям, понять, когда они могут проявиться, и
+                <span
+                  >направить усилия на своевременную диагностику и
+                  профилактику</span
+                >
+                традиционными методами. Это может сэкономить вам нервы, время,
+                деньги и даже сохранить жизнь. Вы не станете астрологом, но
+                научитесь видеть ключевые сигналы в своей карте, получите
+                персональные рекомендации и
+                <span>сможете улучшить здоровье,</span> особенно если придете на
+                закрытый вебинар
+              </li>
+            </ul>
+          </div>
+          <button class="hide-btn" type="button" id="toggleBtn">
+            Читать дальше
+          </button>
+          <p class="text">
+            <span>
+              Моя миссия — помочь вам прожить здоровую и счастливую жизнь.</span
+            >
+            Астрология изменила мою жизнь 15 лет назад, и каждый день я
+            благодарна за это. Теперь я хочу поделиться этим с вами!
+          </p>
+          <div class="price-wrap">
+            <p class="old-price">3770 грн</p>
+            <p class="new-price">377 грн</p>
+          </div>
+          <a class="buy-btn" href="">Присоединиться</a>
+        </div>
+      </section>
     </main>
     <footer class="footer"><div class="container"></div></footer>
+    <script type="module" src="./src/js/changeDate.js"></script>
+    <script type="module" src="./src/js/timer.js"></script>
+    <script type="module" src="./src/js/hide.js"></script>
   </body>
 </html>
