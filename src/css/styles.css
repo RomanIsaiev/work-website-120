@@ -19,6 +19,18 @@ body {
   /* overflow-x: hidden; */
 }
 
+@keyframes pulseScale {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.07;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
 .container {
   margin: 0 auto;
   width: 100%;
@@ -40,6 +52,8 @@ body {
 }
 
 .header-wrapper {
+  position: relative;
+
   padding-top: 17px;
   padding-bottom: 17px;
 
@@ -61,9 +75,9 @@ body {
 
 .header .header-name {
   color: #fff;
-  text-align: center;
+  text-align: left;
   font-family: 'Bebas Neue Cyrillic';
-  font-size: 42px;
+  font-size: 47px;
   font-style: normal;
   font-weight: 400;
   line-height: 110%; /* 46.355px */
@@ -73,6 +87,10 @@ body {
 }
 
 .header .start {
+  position: absolute;
+  right: 0px;
+  top: 36px;
+
   color: #161e7f;
   text-align: end;
   font-family: Gilroy;
@@ -121,9 +139,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
+
+  margin-bottom: 10px;
 }
 
 .hero .list-item {
+  position: relative;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,7 +155,13 @@ body {
   background: #fff;
   height: 64px;
   width: 168px;
-  margin-bottom: 10px;
+}
+
+.hero .item-image {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: -12px;
 }
 
 .hero .item-text {
@@ -167,6 +195,8 @@ body {
   text-transform: uppercase;
 
   margin: 0 auto 12px;
+
+  animation: pulseScale 2000ms infinite;
 }
 
 /* timer */
@@ -426,6 +456,7 @@ body {
 /* why make */
 
 .why-make {
+  padding-bottom: 60px;
 }
 
 .why-make .container {
@@ -501,6 +532,8 @@ body {
   border: inherit;
   background: inherit;
   margin: 0 auto;
+
+  animation: pulseScale 2000ms infinite;
 }
 
 .why-make .text {
@@ -581,14 +614,19 @@ body {
   text-transform: uppercase;
 
   margin: 0 auto;
+
+  animation: pulseScale 2000ms infinite;
+}
+
+.form {
+  margin-top: -20px;
 }
 
 /* you-get */
 
 .you-get {
-  padding-top: 166px;
+  padding-top: 60px;
   background: #eff4ff;
-  margin-top: -40px;
 }
 
 .you-get .container {

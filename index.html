@@ -14,8 +14,8 @@
     <header class="header">
       <div class="container">
         <div class="header-wrapper">
-          <p class="header-desc">Профессиональный курс</p>
-          <p class="header-name">Ведической Астрологии</p>
+          <p class="header-desc">Вводный курс</p>
+          <p class="header-name">Астрология здоровья</p>
           <p class="start">
             старт <span id="dateElement"></span>
             <span id="monthElement"></span>
@@ -32,19 +32,81 @@
           </h1>
           <ul class="list">
             <li class="list-item">
-              <p class="item-text">Без запугивания и диагнозов</p>
+              <picture>
+                <source
+                  srcset="
+                    ./src/img/hero/item-01-1x.png 1x,
+                    ./src/img/hero/item-01-2x.png 2x
+                  "
+                  width="24"
+                  height="auto" />
+                <img
+                  class="item-image"
+                  src="./src/img/hero/item-01-1x.png"
+                  alt="item image"
+                  width="24"
+                  height="auto"
+              /></picture>
+              <p class="item-text">Доступно даже с полного 0</p>
             </li>
             <li class="list-item">
-              <p class="item-text">Без медицинских знаний и эзотерики</p>
+              <picture>
+                <source
+                  srcset="
+                    ./src/img/hero/item-02-1x.png 1x,
+                    ./src/img/hero/item-02-2x.png 2x
+                  "
+                  width="24"
+                  height="auto" />
+                <img
+                  class="item-image"
+                  src="./src/img/hero/item-02-1x.png"
+                  alt="item image"
+                  width="24"
+                  height="auto"
+              /></picture>
+              <p class="item-text">Поддержка и проверка на каждом этапе</p>
             </li>
             <li class="list-item">
-              <p class="item-text">Увидите риски заранее</p>
+              <picture>
+                <source
+                  srcset="
+                    ./src/img/hero/item-03-1x.png 1x,
+                    ./src/img/hero/item-03-2x.png 2x
+                  "
+                  width="24"
+                  height="auto" />
+                <img
+                  class="item-image"
+                  src="./src/img/hero/item-03-1x.png"
+                  alt="item image"
+                  width="24"
+                  height="auto"
+              /></picture>
+              <p class="item-text">Реальные изменения с первого модуля</p>
             </li>
             <li class="list-item">
-              <p class="item-text">С акцентом на профилактику</p>
+              <picture>
+                <source
+                  srcset="
+                    ./src/img/hero/item-04-1x.png 1x,
+                    ./src/img/hero/item-04-2x.png 2x
+                  "
+                  width="24"
+                  height="auto" />
+                <img
+                  class="item-image"
+                  src="./src/img/hero/item-04-1x.png"
+                  alt="item image"
+                  width="24"
+                  height="auto"
+              /></picture>
+              <p class="item-text">
+                Видите результаты — идёте дальше с уверенностью
+              </p>
             </li>
           </ul>
-          <a class="hero-btn" href="">детальнее</a>
+          <a class="hero-btn" href="#buy">детальнее</a>
           <div id="countdown-one" class="countdown">
             <div class="countdown-number">
               <span class="minutes countdown-time"></span>
@@ -262,7 +324,7 @@
           <button class="hide-btn" type="button" id="toggleBtn">
             Читать дальше
           </button>
-          <p class="text">
+          <p class="text" id="buy">
             <span>
               Моя миссия — помочь вам прожить здоровую и счастливую жизнь.</span
             >
@@ -273,7 +335,8 @@
             <p class="old-price">3770 грн</p>
             <p class="new-price">377 грн</p>
           </div>
-          <a class="buy-btn" href="">Присоединиться</a>
+          <!-- <a class="buy-btn" href="">Присоединиться</a> -->
+          <div class="form"><div id="kwiga-widget-1752134470000"></div></div>
         </div>
       </section>
       <section class="you-get">
@@ -467,7 +530,7 @@
             <p class="old-price">3770 грн</p>
             <p class="new-price">377 грн</p>
           </div>
-          <a class="buy-btn orange" href="">Присоединиться</a>
+          <a class="buy-btn orange" href="#buy">Присоединиться</a>
         </div>
       </section>
       <section class="questions">
@@ -560,7 +623,7 @@
             <p class="old-price">3770 грн</p>
             <p class="new-price">377 грн</p>
           </div>
-          <a class="buy-btn" href="">Присоединиться</a>
+          <a class="buy-btn" href="#buy">Присоединиться</a>
           <p class="attention">
             <span>
               Курс «Астрология здоровья» не является медицинской услугой и не
@@ -578,5 +641,9 @@
     <script type="module" src="./src/js/timer.js"></script>
     <script type="module" src="./src/js/hide.js"></script>
     <script type="module" src="./src/js/questions.js"></script>
+    <script
+      type="module"
+      src="https://kwiga.com/build/js/kwiga-widget.js?t=1752134470000&uuid=296b4f3e-3c21-4f6f-b285-c32dc01e89d5&producer=https://kwiga.com/"
+    ></script>
   </body>
 </html>
